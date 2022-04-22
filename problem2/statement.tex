@@ -1,6 +1,6 @@
 Bo is a great fan of number theory, and he designed a phone lock with a mathematical combination. Here's how he structured it:
 
-The phone's keypad has an additional Add button apart from the 10 buttons from 0 to 9. On click of any button from 0 to 9, the corresponding digit appears on display. On click of the special Add button, the last two digits appearing on the screen get replaced by their sum modulo 10. If there are fewer than two digits currently on the screen, pressing Add does nothing.
+The phone's keypad has an additional Add button apart from the 10 buttons from 0 to 9. On click of any button from 0 to 9, the corresponding digit appears on display. On click of the special Add button, the last two digits appearing on the screen get replaced by their sum modulo 10. The Add button cannot be pressed (= does nothing when pressed) when there are fewer than two digits. Also, the Add button cannot be pressed more than once in a row. For example, 211 -> Add -> 22 -> Add -> 4 is **not** possible.
 
 Bo has assigned a non-negative cost to pressing each button. The cost of pressing the Add button is always zero. Now, given the cost of pressing each button and the target passcode, your task is to find the minimum cost of feeding that number into the phone screen using any sequence of button presses.
 
