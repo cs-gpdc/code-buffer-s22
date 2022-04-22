@@ -1,0 +1,21 @@
+Bo is a great fan of number theory, and he designed a phone lock with a mathematical combination. Here's how he structured it:
+
+The phone's keypad has an additional Add button apart from the 10 buttons from 0 to 9. On click of any button from 0 to 9, the corresponding digit appears on display. On click of the special Add button, the last two digits appearing on the screen get replaced by their sum modulo 10. If there are fewer than two digits currently on the screen, pressing Add does nothing.
+
+Bo has assigned a non-negative cost to pressing each button. The cost of pressing the Add button is always zero. Now, given the cost of pressing each button and the target passcode, your task is to find the minimum cost of feeding that number into the phone screen using any sequence of button presses.
+
+**Input Format**  
+First line is an integer $T$ - the number of test cases  
+Each test case is given by 3 lines.  
+
+- First line of each test case contains 10 space separated integers, denoting the cost of pressing buttons from 0 to 9.  
+- The second line of each test contains the length of the target passcode.  
+- The third line contains the target passcode.  
+
+**Constraints**  
+$1 \leq T \leq 1000$  
+$0 \leq$ Cost of any button $\leq 1000$  
+$1 \leq |S| \leq 1000$
+
+**Output Format**  
+Print the minimum cost of feeding the phone screen with the target number for each test case in a separate line.
