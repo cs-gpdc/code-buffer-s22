@@ -1,0 +1,34 @@
+Based on a friend's recommendation, Gilfoyle started watching One Piece. Since then, he has been spending his whole day watching anime and has stopped doing any actual work. Erlich is not happy about this, and he wants to motivate Gilfoyle to work.
+
+He came up with an incentive scheme that would reward Gilfoyle with some money based on the number of commits he pushes daily. In other words, Erlich wants to reward Gilfoyle daily for consistently beating his own personal best to produce quality work. 
+
+Let the number of commits pushed by Gilfoyle on each day be $C_1, C_2, C_3..., C_N$. On the day $i$, Erlich has promised Gilfoyle a reward $R_i$ equal to $C_i$ times the number of continuous time windows ending on day $i$ where $C_i$ is the highest among all the number of commits across these days. 
+
+The risk Erlich took was calculated, but unfortunately, he is bad at math. So he needs your help to calculate the total reward amount $R$ he has to pay.
+
+**Sample Example**  
+
+Let $[2, 8, 4, 5, 6]$ be the number of commits pushed by Gilfoyle.  
+
+- Day 1 => $2$ is the highest among the only $1$ time window till day 1 => $[2]$  
+    So we add the $2 * 1$ to the total reward, which becomes $2$.  
+- Day 2 => $8$ is the highest among $2$ time windows till day 2 => $[8], [2, 8]$  
+    So we add the $8 * 2$ to the total reward, which becomes $18$.  
+- Day 3 => $4$ is the highest among the only $1$ time window till day 3 => $[4]$  
+    So we add the $4 * 1$ to the total reward, which becomes $22$.  
+- Day 4 => $5$ is the highest among $2$ time windows till day 4 => $[5], [4, 5]$  
+    So we add the $5 * 2$ to the total reward, which becomes $32$.  
+- Day 5 => $6$ is the highest among $3$ time windows till day 5 => $[6], [5, 6], [4, 5, 6]$  
+    So we add the $6 * 3$ to the total reward, which becomes $50$.
+
+
+**Input Format**  
+The first line contains an integer $N$, the number of days.
+The second line contains $N$ space-separated integers $C[i]$, the number of commits pushed by Gilfoyle on day $i$.
+
+**Constraints**  
+$1 \leq N \leq 10^6$  
+$1 \leq C[i] \leq 10^9$
+
+**Output Format**  
+An integer $R$ that denotes the total reward amount Erlich has to pay to Gilfoyle.
