@@ -1,0 +1,7 @@
+04,small,0-n-1,5
+05,small,n-1,5
+06,small,rand,20
+07,big,0-n-1,10
+08,big,n-1,10
+09,big,rand,25
+10,big,rand,25
