@@ -1,31 +1,16 @@
-// C++ program to check whether input degree
-// sequence is graph or tree
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
- 
-// Function returns true for tree
-// false for graph
-bool check(int degree[], int n)
-{
-    // Find sum of all degrees
+bool check(int degree[], int n) {
     int deg_sum = 0;
     for (int i = 0; i < n; i++)
         deg_sum += degree[i];
- 
-    // Graph is tree if sum is equal to 2(n-1)
     return (2*(n-1) == deg_sum);
 }
  
-// Driver program to test above function
-int main()
-{
+int main() {
     int n; cin>>n;
     int degree[n]; for(int i=0; i<n; i++) cin>>degree[i];
- 
-    if (check(degree, n))
-        cout << "Yes";
-    else
-        cout << "No";
- 
+    if (check(degree, n)) cout << "Yes";
+    else cout << "No";
     return 0;
 }

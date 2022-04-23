@@ -1,12 +1,5 @@
 #include<iostream>
-#include<vector>
-#include<queue>
-#include<unordered_set>
-#include<unordered_map>
 using namespace std;
-
-typedef pair<int,string> pi;
-
 int main(void) {
     int t; cin>>t;
     while(t--) {
@@ -21,7 +14,6 @@ int main(void) {
                 }
             }
         }
-        // for(int i=0; i<10; i++) cout << i << ' '<<c[i]<<'\n';
         int cc = 0;
         for(int i=0; i<n; i++) {
             cc += c[en[i]-'0'];
